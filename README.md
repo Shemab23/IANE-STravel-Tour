@@ -1,68 +1,37 @@
-# Iane's Travel & Tours
+# Iane's Travel & Tours ✈️
 
-> Conquer the world with us.
+A travel booking website with a custom brand theme and full light/dark mode.
 
-A travel website I built as a solo project. Custom Tailwind CSS v4 theme derived from the brand logo — sky blue, sunrise yellow, and army green — with balanced light and dark mode.
+## What I built
 
----
+A solo project for a travel company. I built the site around a color system taken from the brand logo: sky blue, sunrise yellow, and army green. Every color on the site is computed from those three.
 
-## Stack
+## Tech Stack
 
 - React + Vite
+- TypeScript
 - Tailwind CSS v4
 - shadcn/ui
-- Inter Variable
+- Deployed on Vercel
 
----
+## Key Features
 
-## Design System
+- **Brand-driven design system:** three base colors generate all surfaces, borders, and gradients using `color-mix()`
+- **Light and dark themes:** no duplicated values
+- **Responsive layout:** works on desktop and mobile
+- **One-place theming:** change a single variable and the whole UI updates
 
-Three raw colors drive everything:
+## Screenshots
 
-| Token         | Role                        | Light     | Dark      |
-| ------------- | --------------------------- | --------- | --------- |
-| `--raw-brand` | Links, buttons, focus       | `#2b7bb9` | `#7fb8e0` |
-| `--raw-sun`   | Warm accent, highlights     | `#f5a623` | `#f7c948` |
-| `--raw-army`  | Headings, grounding surfaces| `#2f4a2f` | `#a8c4a0` |
+![Home](./screenshots/home.png)
+![Dark mode](./screenshots/dark.png)
 
-All surfaces, borders, and the background gradient are computed from these three with `color-mix()`, so the whole UI re-themes from one palette. Dark mode needs no duplicated values.
+## Live Demo
 
----
+🔗 [iane-s-travel-tour-black.vercel.app](https://iane-s-travel-tour-black.vercel.app)
 
-## Getting Started
+## What I learned
 
-```bash
-npm install
-npm run dev
-```
-
-Build for production:
-
-```bash
-npm run build
-npm run preview
-```
-
----
-
-## Customization
-
-Change a brand color in one place:
-
-```css
-:root { --raw-brand: #2b7bb9; }
-.dark { --raw-brand: #7fb8e0; }
-```
-
-Everything downstream updates automatically.
-
-Gradient intensity is controlled by the mix percentages in `--bg-gradient` — currently `14%` brand / `12%` army. Bump to `22%` / `20%` for a stronger wash.
-
----
-
-## License
-
-MIT
-```
-
-Short, honest, and still covers what matters: what it is, what it's built with, how the color system works, and how to run it. Cut anything you don't need — if it's just a personal repo, you can even drop the License section.
+- Building a scalable design system with Tailwind v4 and CSS variables
+- Turning a brand logo into a consistent color palette
+- Delivering a complete client-style website on my own
